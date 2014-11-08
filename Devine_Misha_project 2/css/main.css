@@ -7,6 +7,11 @@ h1,h2 {
  text-align: center;
  color: rgb(255,175,234);
  text-shadow: 2px 2px 20px black;
+ font-family: 'Oswald', sans-serif;
+}
+h3 {
+ width: 1280px;
+ margin: 4px auto;
 }
 #nav ul {
 	list-style-type: none;
@@ -22,7 +27,7 @@ h1,h2 {
 	
 }
 #nav a {
- color: rgb(255,175,234);
+ color: rgba(255,175,234,0.9);
  padding: .7em;
  text-shadow: 2px 2px 20px black;
 }
@@ -34,16 +39,16 @@ background-color: rgba(185,255,240,0.9);
 a:link {
  text-decoration:none;
 }
-a:visted {
- color: red; 	
+a:visited {
+ color: rgb(242,242,240);	
  text-decoration:none;
 }
 a:hover {
- color: aqua; 	
+ color: rgb(255,175,234); 	
  text-decoration:underline;
 }
 a:active {
- color: yellow; 	
+ color: rgb(30,242,213); 	
  text-decoration:none;
 }
 p {
@@ -54,8 +59,7 @@ p {
 #one {
 width:1220px;
 height:500px;
--moz-box-shadow: 5px 5px 5px rgb(134,165,232); 
--webkit-box-shadow: 5px 5px 5px rgb(134,165,232);
+
 box-shadow: 5px 5px 5px rgb(174,172,212);
 margin: 4px auto;
 }
@@ -63,4 +67,21 @@ dl {
  width: 1200px;
  margin: 4px auto;
  
+}
+#list ul {
+list-style-type: none;
+width: 400px;
+ margin: 4px auto;
+}
+#list li {
+display: inline-block;
+}
+#bullet ul {
+list-style-type: square;
+width: 400px;
+ margin: 4px auto;
+}
+figure {
+width: 400px;
+margin: 4px auto;
 }
