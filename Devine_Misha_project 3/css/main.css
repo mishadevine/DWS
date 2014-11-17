@@ -5,8 +5,14 @@ body {
  border-radius: 20px;
  width:95%;
  margin:2%;
- background-image: url("../images/soft-grid.gif");
-background-repeat: repeat-x;
+background: #ff5db1; /* Old browsers */
+background: -moz-linear-gradient(left,  #ff5db1 0%, #d98bc4 29%, #d98bc4 29%, #d98bc4 38%, #d98bc4 73%, #ff5db1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff5db1), color-stop(29%,#d98bc4), color-stop(29%,#d98bc4), color-stop(38%,#d98bc4), color-stop(73%,#d98bc4), color-stop(100%,#ff5db1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #ff5db1 0%,#d98bc4 29%,#d98bc4 29%,#d98bc4 38%,#d98bc4 73%,#ff5db1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #ff5db1 0%,#d98bc4 29%,#d98bc4 29%,#d98bc4 38%,#d98bc4 73%,#ff5db1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #ff5db1 0%,#d98bc4 29%,#d98bc4 29%,#d98bc4 38%,#d98bc4 73%,#ff5db1 100%); /* IE10+ */
+background: linear-gradient(to right,  #ff5db1 0%,#d98bc4 29%,#d98bc4 29%,#d98bc4 38%,#d98bc4 73%,#ff5db1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ff5db1',GradientType=1 ); /* IE6-9 */
 }
 h1,h2 {
  text-align: center;
@@ -64,35 +70,25 @@ p {
  margin: 4px auto;
  
 }
-#history {
-width:100%;
-}
-#one {
-width:47%;
+.onetwo {
+width:45%;
 height:500px;
 box-shadow: 5px 5px 5px rgb(174,172,212);
 float:left;
 overflow:scroll;
 margin: 1%;
-background-image: url("../images/soft-grid.gif");
-background-repeat: no repeat;
-}
-.competition{
-width:100%;
-}
-
-#two {
-width:47%;
-height:500px;
-box-shadow: 5px 5px 5px rgb(174,172,212);
-float:right;
-overflow:scroll;
-margin: 1%;
-background-image: url("../images/soft-grid.gif");
+background-image: url("../images/pattern_131.gif");
 background-repeat: repeat-x;
+background-position: center top;
+padding:1%;
+
+}
+#two {
+background-repeat: no-repeat;
+background-position: center center;
 }
 .clear{
-clear:right;
+clear:both;
 }
 dl {
  width: 80%;
@@ -113,14 +109,30 @@ width: 47%;
  margin: 4px auto;
 }
 figure {
-width: 40%;
+
 float:left;
-margin: auto;
+
 }
 
 .clear2 {
 clear:both;
 }
-#figure {
-margin: 10%;
+#pictures {
+margin: 1% auto;
+width:76%;
+
 }
+#pictures figure{
+width:29%;
+height: 200px:
+margin:2%
+}
+#pictures figure img{
+display: block;
+width: 100%;
+height: auto;
+}
+#figure4 {
+overflow:hidden;
+}
+
