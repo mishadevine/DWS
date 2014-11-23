@@ -1,4 +1,4 @@
-body {
+body { /* this section styles the overall style of the page */
  background-color: rgb(217,139,196);
  background-position: center top;
  border: 4px double rgb(49,203,232);
@@ -14,20 +14,17 @@ background: -ms-linear-gradient(left,  #ff5db1 0%,#d98bc4 29%,#d98bc4 29%,#d98bc
 background: linear-gradient(to right,  #ff5db1 0%,#d98bc4 29%,#d98bc4 29%,#d98bc4 38%,#d98bc4 73%,#ff5db1 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ff5db1',GradientType=1 ); /* IE6-9 */
 }
-h1,h2 {
- text-align: center;
+h1,h2 { /* this section changes color, style and font to headings 1 and headings 2 */
+ text-align: center; 
  color: rgb(255,175,234);
  text-shadow: 2px 2px 20px black;
  font-family: 'Oswald', sans-serif;
 }
-h3 {
+h3 { /* this section opens h3 up to 100% and centers it */
  width: 100%;
  margin: 4px auto;
 }
-.practice {
-width:90%
-}
-#nav ul {
+#nav ul { /* styles the nav ul's */
 	list-style-type: none;
 	font-family: 'Oswald', sans-serif;
     border: 2px solid rgb(134,165,232);
@@ -35,104 +32,122 @@ width:90%
 	width: 95%;
     margin: 4px auto;
 }
-#nav li{
+#nav li{ /* styles the nav li */
 	display: inline-block;
 	margin-right: 7px;
 	
 }
-#nav a {
+#nav a { /* styles the navigation links */
  color: rgba(255,175,234,0.9);
  padding: .7em;
  text-shadow: 2px 2px 20px black;
 }
-/* 
-#nav li.current {
-background-color: rgba(185,255,240,0.9);
-}	
- */
-a:link {
+
+a:link { /* diabling the underline under a link */
  text-decoration:none;
 }
-a:visited {
+a:visited { /* styling the link when it is visited */
  color: rgb(242,242,240);	
  text-decoration:none;
 }
-a:hover {
+a:hover { /* styling the link when it is hovered over */
  color: rgb(255,175,234); 	
  text-decoration:underline;
 }
-a:active {
+a:active { /* styling the link when the mouse clicks and hold on a link */
  color: rgb(30,242,213); 	
  text-decoration:none;
 }
-p {
+p { /* styling of the overall p's */
  width: 90%;
  margin: 4px auto;
  
 }
-.onetwo {
-width:45%;
-height:500px;
-box-shadow: 5px 5px 5px rgb(174,172,212);
+.column1 { /* styling of column1 */
+width:60%;
+height:700px;
 float:left;
-overflow:scroll;
 margin: 1%;
 background-image: url("../images/pattern_131.gif");
 background-repeat: repeat-x;
 background-position: center top;
-padding:1%;
 
 }
-#two {
-background-repeat: no-repeat;
-background-position: center center;
+.column3 { /* styling of column3 */
+width:100%;
+float:left;
+margin: 1%;
+margin-top: 1550px;
+
 }
-.clear{
-clear:both;
-}
-dl {
+
+dl { /* style of definitions */
  width: 80%;
  margin: 4px auto;
  
 }
-#list ul {
+#list ul { /* styiling of the ul's */
 list-style-type: none;
 width: 400px;
  margin: 4px auto;
 }
-#list li {
+#list li { /* styling of the li's */
 display: inline-block;
 }
-#bullet ul {
-list-style-type: square;
-width: 47%;
- margin: 4px auto;
-}
-figure {
 
-float:left;
+.column2 { /* styling of column 2 */
+width:32%;
+height:500px;
+float:right;
+margin: 1%;
+}
+.clear { /* clears the floats under all columns */
+clear:both; 
+}
+nav.center { /* centers the nav */
+margin: auto;
+}
+#content{/*  hides the overflowing text from the other divs */
+overflow: hidden;
+}
+form { /* overall styling of the form */
+background-color: white;
+color: rgb(255,175,234);
+border: 2px;
+border-style: solid;
+padding: 10px;
+border-radius: 5px;
 
-}
-
-.clear2 {
-clear:both;
-}
-#pictures {
-margin: 1% auto;
-width:76%;
-
-}
-#pictures figure{
-width:29%;
-height: 200px:
-margin:2%
-}
-#pictures figure img{
-display: block;
-width: 100%;
-height: auto;
-}
-#figure4 {
-overflow:hidden;
 }
 
+form input.submit:hover {
+background-color: rgb(255,175,234);
+} 
+input.submit:active {
+background-color: red;
+}  
+input.text:focus {
+background-color: rgb(255,175,234);
+} 
+
+.title { /* floats the title of the forms to the left */
+float: left;
+width:120px;
+clear: left;
+}
+table { /* overall styling of the table */
+border-spacing: 0px;
+margin: 0 auto;
+background-color: hotpink;
+border: 2px;
+border-style: solid;
+border-radius: 5px;
+border-color: purple;
+padding: 10px;
+}
+th { /* aligns the table headings to the left */
+text-align: left;
+}
+td { /* aligns the table cells to the right */
+text-align: right;
+}
